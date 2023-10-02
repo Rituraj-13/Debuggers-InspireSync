@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Raleway:wght@200;300;400;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: var(--secondary-color);
+}
+
+:root{
+    --secondary-color: #212529;
+    --primary-color: #264653;
+    --white-color: #E9ECEF;
+    --shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+*::-webkit-scrollbar{
+    width: 5px;
+    background-color: transparent;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: var(--secondary-color);
+    box-shadow: -1px -1px 10px var(--secondary-color);
+}
+
+body {
+    width: 430px;
+    height: auto;
+}
+
+.flex_center{
+    display: flex;
+    align-items: center;
+}
+
+/* CheckBox for Blocking */
+#web_bw{
+    display: flex;
+    align-items: center;
+    position: relative;
+    appearance: none;
+    width: 45px;
+    height: 20px;
+    background-color: #60ff90;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
+    cursor: pointer;
+}#web_bw::before{
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    left: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: all ease 0.3s;
+}#web_bw:checked{
+    background-color: rgb(255, 39, 64);
+}#web_bw:checked::before{
+    left: calc(100% - 25px);
+}
+
+/* Header */
+header{
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+}
+.logo{
+    font-size: 24px;
+    color: var(--white-color);
+    line-height: 30px;
+    text-shadow: var(--shadow);
+}
+header .navbar{
+    gap: 15px;
+}
+.icon{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}.icon img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Timer Section */
+.timer_sec{
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: .5px solid var(--primary-color);
+}
+.timer_tit .t_title{
+    padding-right: 10px;
+    border-right: .5px solid var(--secondary-color);
+    font-size: 16px;
+    line-height: 16px;
+}
+.time_cd{
+    padding-left: 10px;
+}
+.time_cd > *,
+.digits{    
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+.time_cd > * {    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+button{
+    height: 32px;
+    padding: 0 20px;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.timer_btns{
+    gap: 10px;
+}
+.timer_btns > .icon{
+    padding: 8px;
+}
+.task_sec{
+    padding: 20px 20px 20px 0;
+}
+.tit_sec{
+    justify-content: space-between;
+    margin-bottom: 20px;
+}.tit_sec h2{
+    width: fit-content;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 8px 15px 8px 20px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+/* task */
+#current_tasks{
+    padding-left: 20px;
+    height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task{
+    justify-content: space-between;
+    height: 40px;
+    background-color: var(--white-color);
+}
+.task > *{
+    gap: 12px;
+}
+.task_icon{
+    margin-right: 10px;
+}
+.task_icon .icon:first-child{
+    border: .5px solid #00f;
+    border-radius: 0;
+}
+.task_icon .icon:last-child{
+    border: .5px solid #f00;
+    border-radius: 0;
+}
+
+.task #index{
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+/* Analitycs Section */
+.ana_sec{
+    margin-bottom: 30px;
+}
+#analitycs{
+    justify-content: center;
+    gap: 30px;
+
+}
+.anality{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    box-shadow: var(--shadow);
+    padding: 15px 10px;
+}
+.anality p{
+    font-size: 15px;
+}
+.anality h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.quote_sec{
+    padding: 10px 20px 20px 0;
+    min-height: 100px;
+}.quote_sec p{
+    padding-left: 20px;
+    font-size: 15px;
+}
