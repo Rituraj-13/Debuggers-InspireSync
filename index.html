@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InspireSync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="flex_center">
+        <h1 class="logo">
+            InspireSync
+        </h1>
+        <nav class="navbar flex_center">
+            <input type="checkbox" name="web_bw" id="web_bw">
+            <div class="icon">
+                <img src="./icons/music.svg" alt="music_btn">
+            </div>
+            <div class="icon">
+                <img src="./icons/setting.svg" alt="setting_btn">
+            </div>
+        </nav>
+    </header>
+    <section class="timer_sec flex_center">
+        <div class="flex_center timer_tit">
+            <h2 class="t_title">
+                <span class="current_j">
+                    Work
+                </span><br />
+                Time Left
+            </h2>
+            <h2 class="time_cd">
+                <span class="minute">24</span>
+                <span>:</span>
+                <span class="second">56</span>
+            </h2>
+        </div>
+        <div class="flex_center timer_btns">
+            <button id="timer_start_btn">
+                Start
+            </button>
+            <div class="icon">
+                <img src="./icons/pause.png" alt="pause_btn">
+            </div>
+            <div class="icon">
+                <img src="./icons/stop.png" alt="stop_btn">
+            </div>
+        </div>
+    </section>
+    <!-- task section -->
+    <section class="task_sec">
+        <div class="tit_sec flex_center">
+            <h2>
+                Daily Task
+            </h2>
+            <button>
+                + Add Task
+            </button>
+        </div>
+        <div id="current_tasks">
+            <div class="task flex_center">
+                <div class="flex_center">
+                    <span class="flex_center" id="index">1</span>
+                    <p>Lorem Isum for Task 1</p>
+                </div>
+                <div class="flex_center task_icon">
+                    <div class="icon">
+                        <img src="./icons/done.svg" alt="music_btn">
+                    </div>
+                    <div class="icon">
+                        <img src="./icons/delete.svg" alt="setting_btn">
+                    </div>
+                </div>
+            </div>
+            <div class="task flex_center">
+                <div class="flex_center">
+                    <span class="flex_center" id="index">1</span>
+                    <p>Lorem Isum for Task 1</p>
+                </div>
+                <div class="flex_center task_icon">
+                    <div class="icon">
+                        <img src="./icons/done.svg" alt="music_btn">
+                    </div>
+                    <div class="icon">
+                        <img src="./icons/delete.svg" alt="setting_btn">
+                    </div>
+                </div>
+            </div>
+            <div class="task flex_center">
+                <div class="flex_center">
+                    <span class="flex_center" id="index">1</span>
+                    <p>Lorem Isum for Task 1</p>
+                </div>
+                <div class="flex_center task_icon">
+                    <div class="icon">
+                        <img src="./icons/done.svg" alt="music_btn">
+                    </div>
+                    <div class="icon">
+                        <img src="./icons/delete.svg" alt="setting_btn">
+                    </div>
+                </div>
+            </div>
+            <div class="task flex_center">
+                <div class="flex_center">
+                    <span class="flex_center" id="index">1</span>
+                    <p>Lorem Isum for Task 1</p>
+                </div>
+                <div class="flex_center task_icon">
+                    <div class="icon">
+                        <img src="./icons/done.svg" alt="music_btn">
+                    </div>
+                    <div class="icon">
+                        <img src="./icons/delete.svg" alt="setting_btn">
+                    </div>
+                </div>
+            </div>
+            <div class="task flex_center">
+                <div class="flex_center">
+                    <span class="flex_center" id="index">1</span>
+                    <p>Lorem Isum for Task 1</p>
+                </div>
+                <div class="flex_center task_icon">
+                    <div class="icon">
+                        <img src="./icons/done.svg" alt="music_btn">
+                    </div>
+                    <div class="icon">
+                        <img src="./icons/delete.svg" alt="setting_btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  -->
+    <section class="quote_sec">
+        <div class="tit_sec flex_center">
+            <h2>
+                Fresh Your Mind
+            </h2>
+            <button>
+                Refresh
+            </button>
+        </div>
+        <p id="quote_res">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis sed commodi sunt dolore tenetur rem!
+        </p>
+    </section>
+    <section class="ana_sec">
+        <div class="tit_sec">
+            <h2>
+                Analitycs
+            </h2>
+        </div>
+        <div id="analitycs" class="flex_center">
+            <div class="anality">
+                <p>Today</p>
+                <h3 class="digits" id="today_res">
+                    60%
+                </h3>
+                <center>
+                    <p>
+                        <span class="digits" id="today_r_1">6/10</span> Task <br>Completed
+                    </p>
+                </center>
+                
+            </div>
+            <div class="anality">
+                <p>Monthly</p>
+                <h3 class="digits" id="month_res">
+                    60%
+                </h3>
+                <center>
+                    <p>
+                        <span class="digits" id="month_r_1">6/10</span> Task <br>Completed
+                    </p>
+                </center>
+                
+            </div>
+            <div class="anality">
+                <p>Today</p>
+                <h3 class="digits" id="year_res">
+                    60%
+                </h3>
+                <center>
+                    <p>
+                        <span class="digits" id="year_r_1">6/10</span> Task <br>Completed
+                    </p>
+                </center>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

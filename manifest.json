@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "InspireSync",
+    "description": "An Open Source chrome extension for boosting productivity.",
+    "version": "1.0",
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": "favicon.png"
+    }
+  }
